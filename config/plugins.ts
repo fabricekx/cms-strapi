@@ -1,7 +1,11 @@
-export default (env) => ({
-
+module.exports = {
+    // Exemple de configuration d'un plugin
     'users-permissions': {
-    config: {
-      jwtSecret: env('JWT_SECRET', 'M4ADN8mBKoJeedK4GirryA=='),
+      enabled: true,
+      config: {
+        jwtSecret: process.env.JWT_SECRET || 'defaultSecret',
+      },
     },
-}});
+    // Autres plugins...
+  };
+  
