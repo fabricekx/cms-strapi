@@ -17,7 +17,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::project.project",
-      "inversedBy": "technos"
+      "mappedBy": "technos"
     }
   }
 }
